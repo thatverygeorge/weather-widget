@@ -1,0 +1,9 @@
+@import url('./main.css');
+@import url('./settings.css');
+@import url('./header.css');
+@import url('./weather-list.css');
+@import url('./weather-card.css');
+@import url('./weather-card-skeleton.css');
+@import url('./settings-location-list.css');
+@import url('./settings-add-location-form.css');
+@import url('./footer.css');

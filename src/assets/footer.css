@@ -1,0 +1,22 @@
+footer {
+  flex-shrink: 0;
+  min-height: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--green);
+  padding: 0.5em;
+  border-radius: 5px 5px 0 0;
+
+  & span {
+    font-size: 1em;
+    color: white;
+    text-align: end;
+  }
+
+  & a {
+    color: white;
+  }
+}

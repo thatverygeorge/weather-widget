@@ -1,0 +1,114 @@
+:host {
+  --white: #fff;
+  --black: #101820;
+  --yellow: #fee715;
+  --red: #be5944;
+  --green: #0cb877;
+  --blue: #152cfe;
+  --gray: #e2e2e2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#weather-widget {
+  max-width: 300px;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: var(--gray);
+
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+button svg {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  button:hover {
+    opacity: 0.6;
+  }
+
+  button:disabled:hover {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0.5em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}

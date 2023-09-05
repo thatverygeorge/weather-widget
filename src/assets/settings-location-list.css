@@ -1,0 +1,26 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.location-card {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  gap: 0.5em;
+  border: 2px solid var(--green);
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: var(--white);
+}
+
+.location-card__icon-move {
+  cursor: move;
+  width: 30px;
+  height: 30px;
+}
+
+.location-card__button-delete {
+  justify-self: flex-end;
+}

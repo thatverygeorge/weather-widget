@@ -1,0 +1,17 @@
+.current-weather {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 1em;
+  align-items: center;
+
+  & button {
+    justify-self: end;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    grid-column: 1 / -1;
+  }
+}

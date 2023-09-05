@@ -1,0 +1,21 @@
+header {
+  flex-shrink: 0;
+  min-height: 75px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 1em;
+  align-items: center;
+  background-color: var(--green);
+  padding: 0.5em;
+  border-radius: 0 0 5px 5px;
+
+  & h1 {
+    font-size: 1.75em;
+    color: var(--white);
+  }
+
+  & button {
+    justify-self: end;
+    color: var(--white);
+  }
+}

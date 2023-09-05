@@ -1,0 +1,25 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 0.5em;
+  align-items: center;
+
+  & label {
+    grid-column: 1 / -1;
+    cursor: pointer;
+    justify-self: start;
+  }
+
+  & input {
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 0.5em;
+  }
+
+  & span {
+    color: red;
+    text-align: center;
+  }
+}
